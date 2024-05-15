@@ -18,6 +18,7 @@ html {
 body {
   background-color: hsl(var(--clr-main));
   min-height: 100svh;
+  font-family: 'Alice', sans-serif;
 }
 
 * {
@@ -53,10 +54,11 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Sawarabi Mincho', sans-serif;
+  font-family: 'Playfair Display', sans-serif;
   letter-spacing: -0.01em;
   text-wrap: balance;
   color: hsl(var(--clr-pure-white));
+  line-height: 1.1;
 }
 
 h1 {
@@ -79,9 +81,9 @@ li {
 }
 
 p {
-  font-family: 'Simonetta', sans-serif;
   font-size: var(--step-2);
   color: hsl(var(--clr-pure-white));
+  line-height: 1.5;
 }
 
 li {
@@ -97,94 +99,110 @@ a {
   color: hsl(var(--clr-secundary));
 }
 
-/* sawarabi-mincho-regular - latin */
+/* playfair-display-regular - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Sawarabi Mincho';
+  font-family: 'Playfair Display';
   font-style: normal;
   font-weight: 400;
-  src: url('./fonts/sawarabiMincho/sawarabi-mincho-v17-latin-regular.eot'); /* IE9 Compat Modes */
-  src:
-    url('./fonts/sawarabiMincho/sawarabi-mincho-v17-latin-regular.eot?#iefix')
-      format('embedded-opentype'),
-    /* IE6-IE8 */ url('./fonts/sawarabiMincho/sawarabi-mincho-v17-latin-regular.woff2')
-      format('woff2'),
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-      url('./fonts/sawarabiMincho/sawarabi-mincho-v17-latin-regular.woff') format('woff'),
-    /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
-      url('./fonts/sawarabiMincho/sawarabi-mincho-v17-latin-regular.ttf') format('truetype'),
-    /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-      url('./fonts/sawarabiMincho/sawarabi-mincho-v17-latin-regular.svg#SawarabiMincho')
-      format('svg'); /* Legacy iOS */
+  src: url('../fonts/playfair-display-v37-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* playfair-display-italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../fonts/playfair-display-v37-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* playfair-display-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/playfair-display-v37-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* playfair-display-500italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 500;
+  src: url('../fonts/playfair-display-v37-latin-500italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* playfair-display-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/playfair-display-v37-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* playfair-display-600italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 600;
+  src: url('../fonts/playfair-display-v37-latin-600italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* playfair-display-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/playfair-display-v37-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* playfair-display-700italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 700;
+  src: url('../fonts/playfair-display-v37-latin-700italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* playfair-display-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/playfair-display-v37-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* playfair-display-800italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 800;
+  src: url('../fonts/playfair-display-v37-latin-800italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* playfair-display-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/playfair-display-v37-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* playfair-display-900italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 900;
+  src: url('../fonts/playfair-display-v37-latin-900italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-/* simonetta-regular - latin */
+/* alice-regular - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Simonetta';
+  font-family: 'Alice';
   font-style: normal;
   font-weight: 400;
-  src: url('./fonts/simonetta/simonetta-v27-latin-regular.eot'); /* IE9 Compat Modes */
-  src:
-    url('./fonts/simonetta/simonetta-v27-latin-regular.eot?#iefix') format('embedded-opentype'),
-    /* IE6-IE8 */ url('./fonts/simonetta/simonetta-v27-latin-regular.woff2') format('woff2'),
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-      url('./fonts/simonetta/simonetta-v27-latin-regular.woff') format('woff'),
-    /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
-      url('./fonts/simonetta/simonetta-v27-latin-regular.ttf') format('truetype'),
-    /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-      url('./fonts/simonetta/simonetta-v27-latin-regular.svg#Simonetta') format('svg'); /* Legacy iOS */
-}
-/* simonetta-italic - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Simonetta';
-  font-style: italic;
-  font-weight: 400;
-  src: url('./fonts/simonetta/simonetta-v27-latin-italic.eot'); /* IE9 Compat Modes */
-  src:
-    url('./fonts/simonetta/simonetta-v27-latin-italic.eot?#iefix') format('embedded-opentype'),
-    /* IE6-IE8 */ url('./fonts/simonetta/simonetta-v27-latin-italic.woff2') format('woff2'),
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-      url('./fonts/simonetta/simonetta-v27-latin-italic.woff') format('woff'),
-    /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
-      url('./fonts/simonetta/simonetta-v27-latin-italic.ttf') format('truetype'),
-    /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-      url('./fonts/simonetta/simonetta-v27-latin-italic.svg#Simonetta') format('svg'); /* Legacy iOS */
-}
-/* simonetta-900 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Simonetta';
-  font-style: normal;
-  font-weight: 900;
-  src: url('./fonts/simonetta/simonetta-v27-latin-900.eot'); /* IE9 Compat Modes */
-  src:
-    url('./fonts/simonetta/simonetta-v27-latin-900.eot?#iefix') format('embedded-opentype'),
-    /* IE6-IE8 */ url('./fonts/simonetta/simonetta-v27-latin-900.woff2') format('woff2'),
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-      url('./fonts/simonetta/simonetta-v27-latin-900.woff') format('woff'),
-    /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
-      url('./fonts/simonetta/simonetta-v27-latin-900.ttf') format('truetype'),
-    /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-      url('./fonts/simonetta/simonetta-v27-latin-900.svg#Simonetta') format('svg'); /* Legacy iOS */
-}
-/* simonetta-900italic - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Simonetta';
-  font-style: italic;
-  font-weight: 900;
-  src: url('./fonts/simonetta/simonetta-v27-latin-900italic.eot'); /* IE9 Compat Modes */
-  src:
-    url('./fonts/simonetta/simonetta-v27-latin-900italic.eot?#iefix') format('embedded-opentype'),
-    /* IE6-IE8 */ url('./fonts/simonetta/simonetta-v27-latin-900italic.woff2') format('woff2'),
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-      url('./fonts/simonetta/simonetta-v27-latin-900italic.woff') format('woff'),
-    /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
-      url('./fonts/simonetta/simonetta-v27-latin-900italic.ttf') format('truetype'),
-    /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-      url('./fonts/simonetta/simonetta-v27-latin-900italic.svg#Simonetta') format('svg'); /* Legacy iOS */
+  src: url('../fonts/alice-v20-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 :root {
