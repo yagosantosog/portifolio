@@ -1,0 +1,18 @@
+diff --git a/node_modules/swiper/modules/mousewheel.mjs b/node_modules/swiper/modules/mousewheel.mjs
+index 28c4d2e..7ed72fe 100644
+--- a/node_modules/swiper/modules/mousewheel.mjs
++++ b/node_modules/swiper/modules/mousewheel.mjs
+@@ -348,9 +348,12 @@ function Mousewheel(_ref) {
+     if (swiper.params.mousewheel.eventsTarget !== 'container') {
+       targetEl = document.querySelector(swiper.params.mousewheel.eventsTarget);
+     }
++    
++    const passiveListener = swiper.params.passiveListeners ? { passive: true, capture: false } : false;
++  
+     targetEl[method]('mouseenter', handleMouseEnter);
+     targetEl[method]('mouseleave', handleMouseLeave);
+-    targetEl[method]('wheel', handle);
++    targetEl[method]('wheel', handle, passiveListener);
+   }
+   function enable() {
+     if (swiper.params.cssMode) {

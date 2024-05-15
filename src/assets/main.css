@@ -1,0 +1,252 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+html {
+  color-scheme: dark light;
+  hanging-punctuation: first last;
+}
+
+body {
+  background-color: hsl(var(--clr-main));
+  min-height: 100svh;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: hsl(var(--clr-light-green)) hsl(var(--clr-pure-black) / 0.5);
+}
+
+*::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+*::-webkit-scrollbar-track {
+  background: hsl(var(--clr-pure-black) / 0.5);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: hsl(var(--clr-light-green));
+  border-radius: 20px;
+  border: 0.2rem solid hsl(var(--clr-pure-black));
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Sawarabi Mincho', sans-serif;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+  color: hsl(var(--clr-pure-white));
+}
+
+h1 {
+  font-size: var(--step-5);
+}
+
+h2 {
+  font-size: var(--step-4);
+}
+
+h3 {
+  font-size: var(--step-3);
+}
+
+h1,
+p,
+li {
+  max-width: var(--p-max-width, 65ch);
+  text-wrap: pretty;
+}
+
+p {
+  font-family: 'Simonetta', sans-serif;
+  font-size: var(--step-2);
+  color: hsl(var(--clr-pure-white));
+}
+
+li {
+  list-style: none;
+}
+
+input,
+textarea {
+  color: hsl(var(--clr-pure-black));
+}
+
+a {
+  color: hsl(var(--clr-light-green));
+}
+
+/* sawarabi-mincho-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Sawarabi Mincho';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/sawarabiMincho/sawarabi-mincho-v17-latin-regular.eot'); /* IE9 Compat Modes */
+  src:
+    url('./fonts/sawarabiMincho/sawarabi-mincho-v17-latin-regular.eot?#iefix')
+      format('embedded-opentype'),
+    /* IE6-IE8 */ url('./fonts/sawarabiMincho/sawarabi-mincho-v17-latin-regular.woff2')
+      format('woff2'),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url('./fonts/sawarabiMincho/sawarabi-mincho-v17-latin-regular.woff') format('woff'),
+    /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+      url('./fonts/sawarabiMincho/sawarabi-mincho-v17-latin-regular.ttf') format('truetype'),
+    /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+      url('./fonts/sawarabiMincho/sawarabi-mincho-v17-latin-regular.svg#SawarabiMincho')
+      format('svg'); /* Legacy iOS */
+}
+
+/* simonetta-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Simonetta';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/simonetta/simonetta-v27-latin-regular.eot'); /* IE9 Compat Modes */
+  src:
+    url('./fonts/simonetta/simonetta-v27-latin-regular.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */ url('./fonts/simonetta/simonetta-v27-latin-regular.woff2') format('woff2'),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url('./fonts/simonetta/simonetta-v27-latin-regular.woff') format('woff'),
+    /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+      url('./fonts/simonetta/simonetta-v27-latin-regular.ttf') format('truetype'),
+    /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+      url('./fonts/simonetta/simonetta-v27-latin-regular.svg#Simonetta') format('svg'); /* Legacy iOS */
+}
+/* simonetta-italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Simonetta';
+  font-style: italic;
+  font-weight: 400;
+  src: url('./fonts/simonetta/simonetta-v27-latin-italic.eot'); /* IE9 Compat Modes */
+  src:
+    url('./fonts/simonetta/simonetta-v27-latin-italic.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */ url('./fonts/simonetta/simonetta-v27-latin-italic.woff2') format('woff2'),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url('./fonts/simonetta/simonetta-v27-latin-italic.woff') format('woff'),
+    /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+      url('./fonts/simonetta/simonetta-v27-latin-italic.ttf') format('truetype'),
+    /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+      url('./fonts/simonetta/simonetta-v27-latin-italic.svg#Simonetta') format('svg'); /* Legacy iOS */
+}
+/* simonetta-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Simonetta';
+  font-style: normal;
+  font-weight: 900;
+  src: url('./fonts/simonetta/simonetta-v27-latin-900.eot'); /* IE9 Compat Modes */
+  src:
+    url('./fonts/simonetta/simonetta-v27-latin-900.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */ url('./fonts/simonetta/simonetta-v27-latin-900.woff2') format('woff2'),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url('./fonts/simonetta/simonetta-v27-latin-900.woff') format('woff'),
+    /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+      url('./fonts/simonetta/simonetta-v27-latin-900.ttf') format('truetype'),
+    /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+      url('./fonts/simonetta/simonetta-v27-latin-900.svg#Simonetta') format('svg'); /* Legacy iOS */
+}
+/* simonetta-900italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Simonetta';
+  font-style: italic;
+  font-weight: 900;
+  src: url('./fonts/simonetta/simonetta-v27-latin-900italic.eot'); /* IE9 Compat Modes */
+  src:
+    url('./fonts/simonetta/simonetta-v27-latin-900italic.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */ url('./fonts/simonetta/simonetta-v27-latin-900italic.woff2') format('woff2'),
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      url('./fonts/simonetta/simonetta-v27-latin-900italic.woff') format('woff'),
+    /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+      url('./fonts/simonetta/simonetta-v27-latin-900italic.ttf') format('truetype'),
+    /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+      url('./fonts/simonetta/simonetta-v27-latin-900italic.svg#Simonetta') format('svg'); /* Legacy iOS */
+}
+
+:root {
+  --clr-main: 227 71% 15%;
+  --clr-dark-purple: 277 70% 35%;
+  --clr-light-green: 66 70% 54%;
+  --clr-light-gray: 0 0% 88%;
+  --clr-pure-white: 0 0% 100%;
+  --clr-pure-black: 0 0% 0%;
+
+  --step-0: clamp(0.5rem, 0.3261rem + 0.8696vi, 1rem);
+  --step-1: clamp(0.6rem, 0.3739rem + 1.1304vi, 1.25rem);
+  --step-2: clamp(0.72rem, 0.427rem + 1.4652vi, 1.5625rem);
+  --step-3: clamp(0.864rem, 0.4852rem + 1.8941vi, 1.9531rem);
+  --step-4: clamp(1.0368rem, 0.5482rem + 2.4428vi, 2.4414rem);
+  --step-5: clamp(1.2442rem, 0.6154rem + 3.1436vi, 3.0518rem);
+}
+
+.text-light {
+  color: hsl(var(--clr-pure-white));
+}
+
+.text-dark {
+  color: hsl(var(--clr-pure-black));
+}
+
+.text-accent {
+  color: hsl(var(--clr-light-green));
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.no-transitions * {
+  transition: none !important;
+}
+
+.container {
+  width: 80%;
+  max-width: 80rem;
+  margin-inline: auto;
+}
+
+.slide-fade-enter-active {
+  transition: all 0.8s ease-out;
+}
+
+.slide-fade-leave-active {
+  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateY(-7px);
+  opacity: 0;
+}
