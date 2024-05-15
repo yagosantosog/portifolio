@@ -13,7 +13,6 @@ button {
   border: none;
   border-radius: 0.2em;
   color: hsl(var(--clr-pure-white));
-  font-weight: bold;
   transition: transform 0.4s;
   cursor: pointer;
 }
