@@ -68,7 +68,7 @@ onUnmounted(() => window.removeEventListener('wheel', handleWheel))
                     <path
                       d="M 5 58 C 5 53.423 0 48 0 48 L 3.125 48 L 7.083 47.996 L 10 48 C 10 48 5 53 5 58 Z"
                       id="Triangle"
-                      style="fill: rgb(205, 220, 57)"
+                      style="fill: rgb(33, 134, 222)"
                     />
                   </g>
                 </g>
@@ -79,7 +79,7 @@ onUnmounted(() => window.removeEventListener('wheel', handleWheel))
               y="17.668"
               width="18.12"
               height="243.464"
-              style="fill: rgb(205, 220, 57); fill-rule: evenodd"
+              style="fill: rgb(33, 134, 222); fill-rule: evenodd"
             />
           </g>
         </svg>
@@ -130,7 +130,7 @@ main {
   position: relative;
   aspect-ratio: 0.6 / 1;
   width: 1rem;
-  border: 3px solid hsl(var(--clr-light-green));
+  border: 3px solid hsl(var(--clr-secundary));
   margin-inline: auto;
   margin-top: 1rem;
 }

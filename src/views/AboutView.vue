@@ -88,7 +88,7 @@ main {
 
 a {
   text-decoration: none;
-  color: hsl(var(--clr-light-green));
+  color: hsl(var(--clr-secundary));
 }
 
 h2,
@@ -117,7 +117,7 @@ p {
   }
 
   i {
-    --color: hsl(var(--clr-light-green));
+    --color: hsl(var(--clr-secundary));
     --border: 2px;
     --offset: 1rem;
     --gap: 0px;

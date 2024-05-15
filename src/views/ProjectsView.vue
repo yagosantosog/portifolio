@@ -71,7 +71,7 @@ import goldenSerenMidiaPrint from '@/assets/images/golden-seren-midia-print.webp
 
 <style scoped>
 swiper-container {
-  --swiper-pagination-color: hsl(var(--clr-dark-purple));
+  --swiper-pagination-color: hsl(var(--clr-secundary));
   --swiper-pagination-right: auto;
   --swiper-pagination-left: 0.5rem;
   --swiper-pagination-bottom: auto;
@@ -82,7 +82,7 @@ swiper-container {
   --swiper-pagination-bullet-size: 0.5rem;
   --swiper-pagination-bullet-width: 0.5rem;
   --swiper-pagination-bullet-height: 0.5rem;
-  --swiper-pagination-bullet-inactive-color: hsl(var(--clr-dark-purple));
+  --swiper-pagination-bullet-inactive-color: hsl(var(--clr-secundary));
   --swiper-pagination-bullet-inactive-opacity: 0.25;
   --swiper-pagination-bullet-opacity: 1;
   --swiper-pagination-bullet-horizontal-gap: 0;

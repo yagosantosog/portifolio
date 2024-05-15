@@ -7,7 +7,7 @@ button {
   font-size: var(--step-3);
   max-width: fit-content;
   padding: 0.2em 0.5em;
-  background-color: hsl(var(--clr-light-green));
+  background-color: hsl(var(--clr-secundary));
   border: none;
   border-radius: 0.2em;
   color: hsl(var(--clr-main));

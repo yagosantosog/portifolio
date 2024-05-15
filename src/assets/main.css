@@ -22,7 +22,7 @@ body {
 
 * {
   scrollbar-width: thin;
-  scrollbar-color: hsl(var(--clr-light-green)) hsl(var(--clr-pure-black) / 0.5);
+  scrollbar-color: hsl(var(--clr-secundary)) hsl(var(--clr-pure-black) / 0.5);
 }
 
 *::-webkit-scrollbar {
@@ -34,7 +34,7 @@ body {
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: hsl(var(--clr-light-green));
+  background-color: hsl(var(--clr-secundary));
   border-radius: 20px;
   border: 0.2rem solid hsl(var(--clr-pure-black));
 }
@@ -94,7 +94,7 @@ textarea {
 }
 
 a {
-  color: hsl(var(--clr-light-green));
+  color: hsl(var(--clr-secundary));
 }
 
 /* sawarabi-mincho-regular - latin */
@@ -189,8 +189,7 @@ a {
 
 :root {
   --clr-main: 227 71% 15%;
-  --clr-dark-purple: 277 70% 35%;
-  --clr-light-green: 66 70% 54%;
+  --clr-secundary: 208 74% 50%;
   --clr-light-gray: 0 0% 88%;
   --clr-pure-white: 0 0% 100%;
   --clr-pure-black: 0 0% 0%;
@@ -212,7 +211,7 @@ a {
 }
 
 .text-accent {
-  color: hsl(var(--clr-light-green));
+  color: hsl(var(--clr-secundary));
 }
 
 .flex {

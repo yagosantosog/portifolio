@@ -172,7 +172,7 @@ watch(route, () => {
   border-radius: 10rem;
   width: clamp(1.8rem, 5vw, 2.5rem);
   height: 0.15rem;
-  background-color: hsl(var(--clr-light-green));
+  background-color: hsl(var(--clr-secundary));
   transition:
     transform 0.4s,
     background 0.2s;
@@ -243,7 +243,7 @@ nav.nav-active ul {
 }
 
 .link-active {
-  color: hsl(var(--clr-light-green));
+  color: hsl(var(--clr-secundary));
 }
 
 #modal {
@@ -383,7 +383,7 @@ nav.nav-active .openModal {
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: hsl(var(--clr-light-green));
+    background-color: hsl(var(--clr-secundary));
     bottom: 0;
     left: 0;
     transform-origin: right;

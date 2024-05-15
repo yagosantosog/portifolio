@@ -70,7 +70,7 @@ video {
 
 i {
   font-size: var(--step-3);
-  color: hsl(var(--clr-light-green));
+  color: hsl(var(--clr-secundary));
 }
 
 article h3 {

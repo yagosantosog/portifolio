@@ -87,7 +87,7 @@ p {
 
 .creatic h2,
 .creatic h3 {
-  color: hsl(var(--clr-light-green));
+  color: hsl(var(--clr-secundary));
 }
 
 .creatic p {
@@ -100,7 +100,7 @@ p {
 
 .recipe-app h2,
 .recipe-app h3 {
-  color: hsl(var(--clr-main));
+  color: hsl(var(--clr-secundary));
 }
 
 .recipe-app p {
@@ -113,7 +113,7 @@ p {
 
 .lemes-advocacia h2,
 .lemes-advocacia h3 {
-  color: hsl(var(--clr-main));
+  color: hsl(var(--clr-secundary));
 }
 
 .lemes-advocacia p {
@@ -126,7 +126,7 @@ p {
 
 .golden-seren-midia h2,
 .golden-seren-midia h3 {
-  color: hsl(var(--clr-light-green));
+  color: hsl(var(--clr-secundary));
 }
 
 .golden-seren-midia p {
